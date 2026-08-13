@@ -1,0 +1,60 @@
+# Contribuer à french-opsec
+
+Principe unique du projet : **une affirmation sans source n'a pas sa place ici.**
+
+## Comment procéder
+
+| Type de contribution                 | Passer par                             |
+| ------------------------------------ | -------------------------------------- |
+| Typo, lien mort, formulation confuse | Pull request directe                   |
+| Information erronée ou obsolète      | Issue avec la source et la date        |
+| Ajout ou retrait d'un outil          | Issue argumentée (voir critères)       |
+| Nouvelle section, refonte            | Issue de discussion **avant** d'écrire |
+
+Une pull request par sujet. Décrivez le pourquoi et listez les sources. Pour un changement de fond, mettez aussi à jour la mention `*Vérifié : mois année.*` de la section, la [liste des sources](README.md#42-sources) et le [glossaire](README.md#40-glossaire) si un terme nouveau apparaît. L'historique Git tient lieu de journal des modifications.
+
+## Critères pour un outil
+
+Un outil n'est pas ajouté parce qu'il est populaire. Votre proposition doit couvrir :
+
+1. **Problème résolu** et modèle de menace visé. Ce qu'il apporte de différent si un outil du guide couvre déjà ce besoin.
+2. **Transparence** : code ouvert de préférence, sinon documentation technique sérieuse. L'absence d'ouverture est signalée dans le texte.
+3. **Audits** : auteur, date, périmètre, lien. L'absence d'audit n'est pas rédhibitoire, elle est mentionnée.
+4. **Maintenance** : projet actif, correctifs livrés, politique de divulgation.
+5. **Modèle économique** : qui paie, comment. Un outil gratuit sans modèle explicite est un signal d'alerte.
+6. **Ce qu'il NE protège PAS.** Obligatoire. Une proposition sans cette partie est renvoyée.
+7. **Pièges d'usage** et **au moins une alternative** avec la différence de compromis.
+
+**Retrait** d'un outil justifié si : projet abandonné, changement de propriétaire ou de modèle remettant en cause les garanties, vulnérabilité grave non corrigée, communication trompeuse de l'éditeur. Toujours par issue argumentée, pour que la décision reste traçable.
+
+## Règles de rédaction
+
+- Français clair, phrases courtes, ton neutre. Ni sensationnalisme, ni marketing.
+- Aucune affirmation absolue : ni « 100 % sécurisé », ni « impossible à tracer », ni « totalement anonyme ».
+- Chaque terme technique est défini à sa première apparition et ajouté au glossaire.
+- Trame des fiches outils : pourquoi, comment, ce que cela ne protège pas, pièges, alternatives.
+- Les comparaisons expliquent les différences, elles n'attribuent pas de note globale.
+- Titres sans ponctuation superflue, pour garder les ancres stables. Si vous renommez un titre, mettez à jour le sommaire et les liens internes.
+- Schémas en ASCII plutôt qu'en images. Liens vers les sources officielles, jamais de lien affilié ni de raccourcisseur.
+
+## Sources
+
+Par ordre de préférence : documentation officielle, texte de loi, rapport d'audit ; publication d'un organisme reconnu (CNIL, ANSSI, EDPB, ENISA, NIST, EFF, Citizen Lab, Amnesty Security Lab) ; recherche évaluée par les pairs ; presse spécialisée à défaut de source primaire, signalée comme telle.
+
+Refusés : comparatifs générés pour le référencement, classements de sites affiliés, publications commerciales sans méthodologie. Un chiffre venant d'un éditeur privé est attribué explicitement et présenté en ordre de grandeur.
+
+## Dates de vérification
+
+Mettez à jour `*Vérifié : mois année.*` dès que vous avez réellement contrôlé la section, **même si rien n'a changé**. Revue complète souhaitable deux fois par an, et après tout changement réglementaire ou technique majeur.
+
+## Ce qui est refusé
+
+Liens affiliés et contenu promotionnel. Outils présentés sans leurs limites. Promesses d'anonymat total. Conseils destinés à faciliter une infraction : ce guide protège la vie privée, la sécurité des personnes et le travail journalistique. Contenu recopié d'une source incompatible avec la licence.
+
+## Divers
+
+**Recommandation dangereuse** (outil compromis toujours listé, procédure exposant un lecteur) : à signaler en priorité, par issue, ou en privé si la divulgation immédiate présente un risque. Ce dépôt n'est pas un canal d'assistance : en cas d'incident, voir les sections [34](README.md#34-que-faire-en-cas-de-fuite-de-données) et [35](README.md#35-réagir-à-un-incident) du guide et [cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr/).
+
+**Licence** : vos contributions sont publiées sous CC BY-SA 4.0, les extraits de code sous MIT.
+
+**Comportement** : discussions techniques et argumentées, désaccords tranchés par les sources. Les contributions sous pseudonyme sont bienvenues, c'est cohérent avec le sujet.
